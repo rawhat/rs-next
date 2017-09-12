@@ -4,8 +4,26 @@
   "description": "a next-gen homepage",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "api": "node ./api/server.js",
+    "build": "webpack",
+    "client": "webpack-dev-server --port 3000",
+    "start": "nf start"
   },
   "author": "rawhat",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "css-loader": "^0.28.7",
+    "elm-webpack-loader": "^4.3.1",
+    "express": "^4.15.4",
+    "foreman": "^2.0.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^2.4.0",
+    "file-loader": "^0.11.2",
+    "prettier-eslint": "^8.0.0"
+  }
 }
