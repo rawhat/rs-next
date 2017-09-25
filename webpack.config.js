@@ -32,7 +32,9 @@ module.exports = {
     noParse: /\.elm$/
   },
   devServer: {
+    host: '0.0.0.0',
     inline: true,
+    port: 3000,
     stats: { colors: true }
   }
 }
